@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Halo Dunia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Absensi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f4f4f4;
+    }
+    h2 {
+      color: #333;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
-  <h1>Halo dari GitHub Pages!</h1>
-  <p>Ini adalah website pertamaku di GitHub.</p>
+  <h2>Form Absensi</h2>
+  <form action="#" method="post">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="kelas">Kelas:</label>
+    <input type="text" id="kelas" name="kelas" required>
+
+    <label for="tanggal">Tanggal:</label>
+    <input type="date" id="tanggal" name="tanggal" required>
+
+    <label for="keterangan">Keterangan:</label>
+    <select id="keterangan" name="keterangan" required>
+      <option value="">-- Pilih Keterangan --</option>
+      <option value="Hadir">Hadir</option>
+      <option value="Izin">Izin</option>
+      <option value="Sakit">Sakit</option>
+      <option value="Alfa">Alfa</option>
+    </select>
+
+    <button type="submit">Kirim Absen</button>
+  </form>
 </body>
 </html>
